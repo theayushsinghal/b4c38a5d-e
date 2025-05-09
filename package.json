@@ -1,0 +1,63 @@
+{
+  "name": "loan-offer-api-service",
+  "version": "1.0.0",
+  "description": "A Node.js service that handles loan offer requests and generates appropriate responses",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.js\"",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "loan",
+    "api",
+    "fintech",
+    "node",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "joi": "^17.10.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "jest": "^29.6.4",
+    "lint-staged": "^14.0.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "supertest": "^6.3.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/loan-offer-api-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/loan-offer-api-service/issues"
+  },
+  "homepage": "https://github.com/yourusername/loan-offer-api-service#readme"
+}
